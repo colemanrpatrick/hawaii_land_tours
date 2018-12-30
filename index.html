@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <!-- =========================== -->
+    <!-- =========================== -->
+    <button type="button" name="button" onclick="scrollToElement('checkpoint-first',0)" id="return">return<i class="material-icons">arrow_upward</i></br>to top</button>
+    <div id="masthead" class="masthead">
+      <div class="masthead-relative">
+        <nav class="nav-left">
+          <ul>
+            <li class="nav-left-li-left"><button type="button" class="menu-btn" name="button" id="menu-btn">
+                  <hr class="menu-btn-hr-1"/>
+                  <hr class="menu-btn-hr-2"/>
+                  <hr class="menu-btn-hr-3"/>
+                </button>
+                <nav id="main-nav" class="main-nav">
+                  <a href="#">oahu tours</a>
+                  <a href="#">maui tours</a>
+                  <a href="#">kauai tours</a>
+                  <a href="#">big island tours</a>
+                  <a href="#">about us</a>
+                  <a href="#">contact</a>
+                </nav>
+            </li>
+          </ul>
+        </nav>
+        <div class="logo"><img src="images/logo.png"/></div>
+        <div class="phone"><a href="#"><span>toll free</span> 1-866-482-9775</a><a href="#"><span>local</span> 808-892-2082</a>
+        </div>
+      </div>
+    </div>
+    <!-- =========================== -->
+    <div class="wrapper">
+      <!-- =========================== -->
+      <div id="checkpoint-first">
+        <div class="banner">
+          <header>
+            <h1>polynesia is waiting</h1>
+            <h2>look no further for the <b>best discount land tours on hawaii</b></h2>
+            <button type="button" onclick="scrollToElement('slider-content',150)">explore<hr/><i class="material-icons">keyboard_arrow_down</i></button>
+          </header>
+        </div>
+      </div>
+      <!-- ============================ -->
+      <div class="checkpoint">
+        <div id="slider-content" class="slider-content">
+          <header>
+          <span>start by selecting an island below</span>
+          </header>
+          <nav>
+            <button type="button" onclick="toggleGallery();sliderCurrent(1)" id="oahu-btn" name="button"><img src="images/oahu_icon.png" alt=""><span>oahu</span></button>
+            <button type="button" onclick="toggleGallery();sliderCurrent(2)" id="bigi-btn" name="button"><img src="images/big_island_icon.png" alt=""><span>big island</span></button>
+            <button type="button" onclick="toggleGallery();sliderCurrent(3)" id="maui-btn" name="button"><img src="images/maui_icon.png" alt=""><span>maui</span></button>
+            <button type="button" onclick="toggleGallery();sliderCurrent(4)" id="kaui-btn" name="button"><img src="images/kauai_icon.png" alt=""><span>kauai</span></button>
+          </nav>
+        </div>
+      </div>
+      <!-- ============================ -->
+      <div class="gallery" id="gallery">
+        <div class="gallery-content">
+          <button onclick="idToggle('gallery','active');" class="closeBtn" type="button" name="button"><i class="material-icons">cancel</i></button>
+          <div class="slide" id="oahu-slide">
+            <header><span>oahu tours</span></header>
+            <section>
+              <article>
+                <h2>historic pearl harbor, the Dole Pineapple Plantation, and more!</h2>
+                <p><span>L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <b>click below to browse oahu's best activites</b>
+                <a href="#">learn more</a>
+              </article>
+            </section>
+          </div>
+          <div class="slide" id="bigI-slide">
+            <header><span>big island tours</span></header>
+            <section>
+              <article>
+                <h2>Somethigng about volcanos and natural beauty</h2>
+                <p><span>L</span>orem ipsum dolor sit amet, consectgna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <b>click below to browse the big island's best activites</b>
+                <a href="#">learn more</a>
+              </article>
+            </section>
+          </div>
+          <div class="slide" id="maui-slide">
+            <header><span>maui tours</span></header>
+            <section>
+              <article>
+                <h2>something about maui's natural beauity</h2>
+                <p><span>L</span>orem ipsum dolor sit amet, ut labore et dolore magna aliqua.  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <b>click below to browse the maui's best activites</b>
+                <a href="#">learn more</a>
+              </article>
+            </section>
+          </div>
+          <div class="slide" id="kauai-slide">
+          <header><span>kauai tours</span></header>
+          <section>
+            <article>
+              <h2>see "the grand canyon of the pacific", and more</h2>
+              <p><span>L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, it anim id est laborum.</p>
+              <b>click below to browse the kauai's best activites</b>
+              <a href="#">learn more</a>
+            </article>
+          </section>
+          </div>
+          <ul>
+            <button class="detail-btn" type="button" onclick="sliderCurrent(1)" id="oahu-btn-detail" name="button"><span>oahu</span></button>
+            <button class="detail-btn" type="button" onclick="sliderCurrent(2)" id="bigi-btn-detail" name="button"><span>big island</span></button>
+            <button class="detail-btn" type="button" onclick="sliderCurrent(3)" id="maui-btn-detail" name="button"><span>maui</span></button>
+            <button class="detail-btn" type="button" onclick="sliderCurrent(4)" id="kaui-btn-detail" name="button"><span>kauai</span></button>
+          </ul>
+        </div>
+      </div>
+      <!-- ============================ -->
+      <div class="checkpoint">
+        <div class="misc-section">
+          <header>
+
+          </header>
+          <!-- ============================ -->
+            <div class="article-first">
+              <div class="img-section">
+                <section>
+                  <a href="#">kualoa ranch</a>
+                </section>
+              </div>
+              <div class="article-section">
+                <article>
+                  <p>Hawaii Land Tour offers some of the best Hawaii nature tours on all the major islands. See towering mountains,volcanos, valleys, waterfalls, and just about anything else Hawaii has to offer. <a href="#">learn more</a></p>
+                </article>
+              </div>
+            </div>
+          <!-- ============================ -->
+            <div class="article-second">
+              <div class="article-section">
+                <article>
+                  <p>Throw a little history into your Hawaii vacation! Visit the Pacific Aviation Museum in a 1930s hangar and see some authentic World War II era airplanes. See Punchbowl National Memorial Cemetery and the USS Arizona Memoria.  <a href="#">learn more</a></p>
+                </article>
+              </div>
+              <div class="img-section">
+                <section>
+                  <a href="#">u.s.s. arizona</a>
+                </section>
+              </div>
+            </div>
+          <!-- ============================ -->
+        </div>
+      </div>
+    </div>
+    <!-- ============================ -->
+    <div class="checkpoint">
+      <div class="coverage-section" id="coverage-section">
+        <header>we've got you covered</header>
+        <section>
+          <ul id="coverage-list">
+            <li>
+              <img src="images/lock.png" alt="">
+              <h2>Safe And Secure</h2>
+              <p>safe, secure online booking system with validated privacy protection.</p>
+            </li>
+            <li>
+              <img src="images/moneyback.png" alt="">
+              <h2>Money Back Guarantee</h2>
+              <p>receive a full refund if cancellation is made at least 48 hours in advance.</p>
+            </li>
+            <li>
+              <img src="images/arrow.png" alt="">
+              <h2>Same Day Reservations</h2>
+              <p>receive your voucher the same day after booking your tour or activity.</p>
+            </li>
+            <li>
+              <img src="images/headset.png" alt="">
+              <h2>Friendly Support</h2>
+              <p>our sales representatives help you select the best activities and ensure 100% satisfaction.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <!-- ============================ -->
+    <footer>
+      <p> Copyright (c) 2018 Copyright Holder All Rights Reserved. </p>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">terms</a></li>
+        <li><a href="#">site map</a></li>
+        <li><a href="#">login</a></li>
+      </ul>
+      </footer>
+    </div>
+    <!-- =========================== -->
+    <script type="text/javascript" src="gallery.js"></script>
+    <script type="text/javascript" src="checkpoint.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
